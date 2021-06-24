@@ -7,40 +7,49 @@
   <title>jQuery Calculator</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="Title">
+    <h1>CALCULATOR</h1>
+    <p>count whenever and everywhere</p>
+  </div>
   <div class="Calc">
-    <form class="Form">
-      <input class="Calc-display">
-    </form>
-    <table>
-      <tr>
-        <td><input type="button" value="C" class="Clear-all"></td>
-        <td><input type="button" value="/" class="Devide"></td>
-        <td><input type="button" value=">" class="Delete"></td>
-        <td><input type="button" value="X" class="Multiply"></td>
+    <div class="Form">
+      <form>
+        <input class="Calc-display">
+      </form>
+    </div>
+    <table class="Table">
+      <tr class="Calc-row">
+        <td class="Calc-data"><input type="button" value="AC" class="Calc-input Clear-all"></td>
+        <td class="Calc-data"><input type="button" value="C" class="Calc-input Delete"></td>
+        <td class="Calc-data"><input type="button" value="/" class="Calc-input Devide"></td>
+        <td class="Calc-data"><input type="button" value="X" class="Calc-input Multiply"></td>
       </tr>
-      <tr>
-        <td><input type="button" value="7" class="Seven"></td>
-        <td><input type="button" value="8" class="Eight"></td>
-        <td><input type="button" value="9" class="Nine"></td>
-        <td><input type="button" value="-" class="Minus"></td>
+      <tr class="Calc-row">
+        <td class="Calc-data"><input type="button" value="7" class="Calc-input Seven"></td>
+        <td class="Calc-data"><input type="button" value="8" class="Calc-input Eight"></td>
+        <td class="Calc-data"><input type="button" value="9" class="Calc-input Nine"></td>
+        <td class="Calc-data"><input type="button" value="-" class="Calc-input Minus"></td>
       </tr>
-      <tr>
-        <td><input type="button" value="4" class="Four"></td>
-        <td><input type="button" value="5" class="Five"></td>
-        <td><input type="button" value="6" class="Six"></td>
-        <td><input type="button" value="+" class="Plus"></td>
+      <tr class="Calc-row">
+        <td class="Calc-data"><input type="button" value="4" class="Calc-input Four"></td>
+        <td class="Calc-data"><input type="button" value="5" class="Calc-input Five"></td>
+        <td class="Calc-data"><input type="button" value="6" class="Calc-input Six"></td>
+        <td class="Calc-data"><input type="button" value="+" class="Calc-input Plus"></td>
       </tr>
-      <tr>
-        <td><input type="button" value="1" class="One"></td>
-        <td><input type="button" value="2" class="Two"></td>
-        <td><input type="button" value="3" class="Three"></td>
-        <td><input type="button" value="=" class="Equal"></td>
+      <tr class="Calc-row">
+        <td class="Calc-data"><input type="button" value="1" class="Calc-input One"></td>
+        <td class="Calc-data"><input type="button" value="2" class="Calc-input Two"></td>
+        <td class="Calc-data"><input type="button" value="3" class="Calc-input Three"></td>
+        <td class="Calc-data"><input type="button" value="=" class="Calc-input Equal"></td>
       </tr>
-      <tr>
-        <td><input type="button" value="0" class="Zero"></td>
-        <td><input type="button" value="." class="Coma"></td>
+      <tr class="Calc-row">
+        <td class="Calc-data"><input type="button" value="0" class="Calc-input Zero"></td>
+        <td class="Calc-data"><input type="button" value="." class="Calc-input Coma"></td>
       </tr>
     </table>
   </div>
